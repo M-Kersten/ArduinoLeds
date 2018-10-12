@@ -4,11 +4,6 @@
 // bibliotheek voor het gebruiken van meerdere serial ports
 #include <SoftwareSerial.h>
 
-// bluetooth module serial ports
-// adres van bleutooth module == 98d3:32:216a0d
-// naam van bluetooth module == LetinkLED
-// wachtwoord van bluetooth module == letink
-
 int incomingByte = 5;   // for incoming serial data
 byte ledGamma[] =
 {
@@ -57,22 +52,6 @@ void loop() {
     }
   }
   fullColor(0,0);
-  /*
-  if (Serial1.available()) {       
-    incomingByte = Serial1.read();   
-    Serial.println(incomingByte);
-    int lightSector = incomingByte;
-    if(lightSector < 4){
-      colorWipe(lightSector, 2);
-      lightSector = 5;
-    }
-    if(lightSector == 4){
-      lightSector = -1;
-      for(int i = 0; i < 4; i++){
-        fullColor(i, 0);
-      }
-    }
-  }*/
 }
 
 // omstebeurt opvullen van een ledstrip in rood
