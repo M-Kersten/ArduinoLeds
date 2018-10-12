@@ -11,10 +11,6 @@
 // bibliotheek voor het gebruiken van meerdere serial ports
 #include <SoftwareSerial.h>
 
-// bluetooth module serial ports
-// adres van bleutooth module == 98d3:32:216a0d
-// naam van bluetooth module == LetinkLED
-// wachtwoord van bluetooth module == letink
 #define rxPin 52
 #define txPin 50
 SoftwareSerial customPort(rxPin, txPin); // RX, TX
